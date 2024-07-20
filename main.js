@@ -1,5 +1,5 @@
 const getPokemons = async () => {
-    const urlApi = "/frontend/data/api.json"
+    const urlApi = "api.json"
     try{
         const response = await fetch(urlApi);
         const pokemons = await response.json();
