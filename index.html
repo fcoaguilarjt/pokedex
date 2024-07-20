@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://66.media.tumblr.com/04bbb6a44e6ac6c9f5d6cddf308d1b5a/tumblr_mr323otPd81rfjowdo1_500.gif" />
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <header class = header>
+        <img src="https://logos-world.net/wp-content/uploads/2020/05/Pokemon-Logo.png" alt="logo" class="mainlogo">
+    </header>
+    <nav class="nav">
+        <input type="text" id="searchInput" class="searchbox" placeholder="Buscar Pokémon...">
+        <button id="btnBuscar" class="btn-Buscar"></button>
+    </nav>
+    <section class="type-Buttons" id="typeButtons">
+        <!-- botones de tipo de Pokémon se generan dinámicamente aquí -->
+    </section>
+    <section class="content">
+        <main id="pokemonContainer" class="pokemon-container">
+            <!-- Tarjetas de Pokémon se generan dinámicamente aquí -->
+        </main>
+    </section>
+
+
+    <!-- Modal para detalles de Pokémon -->
+    <div id="pokemonModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <!-- Contenido del modal se genera dinámicamente aquí -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+
+</html>

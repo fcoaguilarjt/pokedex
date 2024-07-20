@@ -1,0 +1,168 @@
+body{
+    background: linear-gradient(91deg, #ff1c1c, #ff1c1c, rgb(221, 221, 221));
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.pokemon-container{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    
+    
+}
+
+/* Estilos para las tarjetas*/
+.pokemon-card{
+    padding-top: 10px;
+    background-color: #f1f1f1;
+    border: 0px white solid;
+    border-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px 1px black;
+}
+
+.pokemon-card:hover{
+    box-shadow: 0 0 30px 5px rgb(35, 108, 241);
+}
+
+/*Estilos para el modal*/
+
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;/* Hidden by default */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+
+.pokemon-name, .pokemon-type{
+    text-align: center;
+}
+
+.mainlogo{
+    margin-top: 0;
+    width: 400px;
+}
+
+.modalImage{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+
+}
+
+.searchbox{
+    height: 35px;
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+}
+
+.btn-Buscar{
+
+    background-image: url(//upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg);
+    background-size: 35px;
+    height: 40px;
+    width: 40px;
+}
+
+.btn-Buscar:hover{
+    box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+}
+
+.pokemon-type{
+    color: white;
+    background: linear-gradient(93deg, #0067b4, #1bb9b4);
+    height: 30px;
+    border: 0px solid #0067b4 ;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    border-top: 1px solid lightgrey;
+}
+
+
+.modal-content{
+    background: linear-gradient(180deg, #abbcd6, white);
+    width: 350px;
+    height: 570px;
+    background-color: rgb(231, 224, 224);
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-items: center; /* Centra horizontalmente */
+    align-items: center;
+}
+
+.modaltext{
+    border-top: 1px solid lightgrey;
+    padding-top: 10px;
+    padding-left: 15px;
+    height: 100%;
+    width: 335px;
+    color: #243c44;
+    margin-bottom: 0;
+    background: linear-gradient(93deg, #80aba8, #9ccfcd);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.modalPokename{
+    margin-top: 15px;
+}
+
+.type-Buttons{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.type-Buttons button {
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(93deg, #80aba8, #9ccfcd);
+    border: 3px solid #50514f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+}
+
+.type-Buttons button:hover {
+
+    background: linear-gradient(93deg, #1ab177, #01f868);
+
+}
